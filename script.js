@@ -10,7 +10,7 @@ function updateGameArea() {
     food.update();
 }
 
-var myGameArea = {
+const myGameArea = {
     canvas: document.createElement("canvas"),
     start: function () {
         this.canvas.style.backgroundColor = "lightgrey";
@@ -33,7 +33,7 @@ var myGameArea = {
     }
 }
 
-var food = {
+const food = {
     color: "red",
     position: {},
     randomPosition: function () {
@@ -48,7 +48,7 @@ var food = {
     }
 }
 
-var snake = {
+const snake = {
     color: "green",
     head: { x: 300, y: 300 },
     bodyPieces: [],
